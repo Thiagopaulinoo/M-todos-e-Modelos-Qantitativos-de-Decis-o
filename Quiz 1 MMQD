@@ -1,0 +1,82 @@
+"""Crie duas variáveis x = "Olá" e y = "Mundo"
+Inclua código em Python para imprimir as variáveis, de forma que o resultado seja "Olá, Mundo"."""
+
+x = 'Olá,'
+y = ' Mundo'
+print (x + y)
+
+
+"""Inserir código em Python para imprimir "Olá, Nome", onde o usuário informa o seu nome no terminal usando o comando input de Python. 
+Observar que o usuário pode informar seu nome em formato diferente (tudo maiúsculo ou tudo minúsculo).
+Mesmo assim, o resultado precisa ser no formato acima."""
+
+Nome = input('Qual é o seu nome? ')
+print ("Olá, " + Nome.capitalize())
+
+
+"""Crie duas variáveis x  e y, que devem receber os seguintes textos, respectivamente, "Python" e "O'Reilly"
+ Inclua código em Python para manipulação de strings com essas variáveis. 
+ 1. Para as duas primeiras linhas, você deve utilizar, além das variáveis x e y concatenadas com o operador +, o comando \n para quebrar as linhas
+ (dica: utilize a concatenação string1 + "\n" + string2. Observe que pode ser necessário usar \' ou \", dependendo da escolha do delimitador de texto):
+ 
+ "Yes", they said Python is O'Reilly.
+
+"Isn't it?", they said.
+
+2. Depois disso, utilize o operador * para imprimir na próxima linha:
+
+PythonPythonPython
+
+3. Finalmente, utilize a indexação e o fatiamento para imprimir na quarta linha:
+
+Py illy O'Re thon
+
+Test	Result
+print()
+"Yes", they said Python is O'Reilly.
+"Isn't it?", they said.
+PythonPythonPytho
+Py illy O'Re thon"""
+
+x = "Python"
+y = "O'Reilly"
+string1 = '"Yes", they said ' + x + ' is ' + y + '.'
+string2 = '"Isn\'t it?", they said.'
+print(string1 + "\n" 
+      + string2 + "\n" 
+      + x*3 + "\n" 
+      + x[0:2] + ' ' +  y[4:8] + ' ' +  y[0:4] + ' ' + x[2:6] ) 
+      
+      
+"""Crie duas variáveis x  e y, necessariamente números inteiros, a serem informadas pelo usuário com o comando input do Python.
+ Inclua uma frase "Entre o valor de __: ". (Dica: o comando input importa o tipo string. Como você pode transformar para inteiro?).
+ Incluia código em Python para obter uma calculadora Python com as variáveis. 
+ Imprima (print) diversas operações, na ordem solicitada a seguir. O resultado deve aparecer na mesma linha, separado apenas por espaços
+ (Dica: observe que se você não incluir o print, o resultado vai ser incorreto de um tipo tuple que vamos estudar mais para frente): 
+ Ordem: soma (x + y), subtração (x - y), multiplicação (x * y), divisão (x / y), divisão pelo piso (x // y), resto da divisão (x % y), e exponenciação (x ** y)."""
+ 
+ x1 = input('Entre o valor de x: ')
+
+y1 = input('Entre o valor de y: ')
+
+x = int(x1)
+
+y = int(y1)
+
+soma = x + y
+
+subtração = x - y
+
+multiplicação = x * y
+
+divisão = x / y
+
+divpiso = x // y
+
+restodiv = x % y
+
+exp = x ** y
+
+
+ 
+print(soma, subtração, multiplicação, divisão, divpiso, restodiv, exp)
